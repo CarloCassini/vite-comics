@@ -1,1 +1,26 @@
 @use "./partials/variables" as *;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+ul {
+  list-style-type: none; /* nessun elemento come marcatore */
+  padding-left: 0; /* padding nullo */
+  margin-left: 0; /* margine nullo */
+}
+
+h3 {
+  color: red;
+}
+
+.debug {
+  border: 1px dashed red;
+  background-color: rgba($color: #ff0000, $alpha: 0.3);
+}
+.container {
+  width: 90%;
+  margin: auto;
+}
