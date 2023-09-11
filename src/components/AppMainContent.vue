@@ -1,4 +1,6 @@
 <script>
+import AppCard from "./AppCard.vue";
+
 export default {
   data() {
     return {
@@ -88,27 +90,30 @@ export default {
       ],
     };
   },
+  components: { AppCard },
 };
 </script>
 
 <template>
   <main>
-    <!-- prova  -->
-    <div class="card">
-      <img :src="comics[0].thumb" alt="" />
-      <h1>{{ comics[0].series }}</h1>
+    <div class="card-container">
+      <AppCard
+        v-for="(comic, index) in comics"
+        :key="index"
+        :thumb="comic.thumb"
+        :serie="comic.series"
+      />
     </div>
-
-    <h3>lista</h3>
-    <ul>
-      <h5>DC</h5>
-      <li v-for="comic in comics">
-        <a :href="comic.thumb">
-          {{ comic.series }}
-        </a>
-      </li>
-    </ul>
   </main>
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+main {
+  background-color: black;
+}
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+</style>
