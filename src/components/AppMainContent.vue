@@ -97,9 +97,7 @@ export default {
 <template>
   <main>
     <div class="jumbo">
-      <div>
-        <h3>CURRENT SERIES</h3>
-      </div>
+      <h3>CURRENT SERIES</h3>
     </div>
     <div class="card-container">
       <AppCard
@@ -109,18 +107,21 @@ export default {
         :serie="comic.series"
       />
     </div>
+
+    <h3 class="center">CURRENT SERIES</h3>
   </main>
 </template>
 
 <style lang="scss" scoped>
 main {
   background-color: black;
+  padding-bottom: 20px;
 }
 
 .jumbo {
   margin-bottom: 30px;
   height: 300px;
-  background: url("../assets/jumbotron.jpg") no-repeat;
+  background: url("../assets/jumbotron.jpg") no-repeat top;
   position: relative;
   color: white;
 
@@ -128,12 +129,21 @@ main {
     position: absolute;
     left: 10%;
     bottom: -15px;
-    padding: 5px 10px;
-    background-color: #0282f9;
   }
 }
 
+h3 {
+  color: white;
+  padding: 5px 10px;
+  background-color: #0282f9;
+}
+.center {
+  width: fit-content;
+  margin: auto;
+}
+
 .card-container {
+  margin: 30px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
