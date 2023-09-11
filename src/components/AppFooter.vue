@@ -190,6 +190,10 @@ export default {
             </a>
           </li>
         </ul>
+
+        <div class="logo-big">
+          <img src="../assets/dc-logo-bg.png" alt="" />
+        </div>
       </div>
     </section>
     <!-- sezione sign up now -->
@@ -204,15 +208,31 @@ export default {
 h5 {
   padding: 10px 0;
 }
+.logo-big {
+  position: relative;
+  margin-right: 10%;
+  margin-left: auto;
 
+  width: 300px;
+  overflow: hidden;
+  text-align: center;
+  img {
+    position: absolute;
+    left: 0px;
+    top: -10px;
+    aspect-ratio: 1;
+    // width: 110%;
+    height: 110%;
+  }
+}
 #footer-links {
-  padding: 30px;
   color: white;
   background-image: url(../assets/footer-bg.jpg);
 
   .list-Container {
     display: flex;
     justify-content: start;
+    margin: 0 30px;
 
     ul {
       margin: 0 20px;
