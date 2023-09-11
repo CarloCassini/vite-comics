@@ -96,6 +96,11 @@ export default {
 
 <template>
   <main>
+    <div class="jumbo">
+      <div>
+        <h3>CURRENT SERIES</h3>
+      </div>
+    </div>
     <div class="card-container">
       <AppCard
         v-for="(comic, index) in comics"
@@ -111,6 +116,23 @@ export default {
 main {
   background-color: black;
 }
+
+.jumbo {
+  margin-bottom: 30px;
+  height: 300px;
+  background: url("../assets/jumbotron.jpg") no-repeat;
+  position: relative;
+  color: white;
+
+  h3 {
+    position: absolute;
+    left: 10%;
+    bottom: -15px;
+    padding: 5px 10px;
+    background-color: #0282f9;
+  }
+}
+
 .card-container {
   display: flex;
   flex-wrap: wrap;
