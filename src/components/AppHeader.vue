@@ -95,6 +95,7 @@ ul {
       flex-grow: 1;
       margin: 0 30px;
     }
+
     &:hover {
       color: blue;
       border-bottom: 1px solid blue;
