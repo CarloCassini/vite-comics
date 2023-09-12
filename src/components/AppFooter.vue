@@ -198,7 +198,11 @@ export default {
     </section>
     <!-- sezione sign up now -->
     <section id="footer-social">
-      <h5>ALTRO</h5>
+      <h5>
+        ALTRO
+        <font-awesome-icon icon="fa-solid fa-user-secret" />
+        <font-awesome-icon icon="bolt" />
+      </h5>
       <!--  -->
     </section>
   </footer>
